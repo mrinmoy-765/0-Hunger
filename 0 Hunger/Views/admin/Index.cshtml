@@ -1,0 +1,32 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_adminLayout2 .cshtml";
+}
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["msg"]
+    </div>
+}
+
+<div class="container">
+    <div class="row">
+        <!-- Image column -->
+        <div class="col-md-6">
+            <!-- Add an online image below the h2 tag -->
+            <img src="https://i.pinimg.com/550x/24/15/74/2415747ff816da9d08b9ba536d811c2f.jpg" alt="Online Image Description" class="img-fluid" style="max-width: 100%; height: auto;" />
+        </div>
+
+        <!-- Text column -->
+        <div class="col-md-6">
+            <h3 id="title">Our Mission & Vision</h3>
+            <p class="lead">
+                We need a system that will help us to automate and track our works. We are an NGO who works for feeding deprived people and children. We have observed that people are wasting a ton of food every day in Dhaka city (like office programs, buffets, etc.). We are on a mission to make the usage of this food. We have contacted some restaurants, and they agreed to give us those foods before it gets rotten, or they will preserve those foods until we collect from them. We have some employees and are still enrolling.
+            </p>
+        </div>
+    </div>
+</div>
